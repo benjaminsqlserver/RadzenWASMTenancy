@@ -1,0 +1,21 @@
+using Microsoft.AspNetCore.Components.Web;
+using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
+using Radzen;
+using RadzenSchoolTenants.Client;
+using Microsoft.AspNetCore.Components.Authorization;
+
+var builder = WebAssemblyHostBuilder.CreateDefault(args);
+builder.Services.AddScoped<DialogService>();
+builder.Services.AddScoped<NotificationService>();
+builder.Services.AddScoped<TooltipService>();
+builder.Services.AddScoped<ContextMenuService>();
+builder.Services.AddTransient(sp => new HttpClient{BaseAddress = new Uri(builder.HostEnvironment.BaseAddress), Timeout = TimeSpan.FromMinutes(20)});
+builder.Services.AddScoped<RadzenSchoolTenants.Client.ConDataService>();
+builder.Services.AddAuthorizationCore();
+builder.Services.AddHttpClient("RadzenSchoolTenants.Server", client => client.BaseAddress = new Uri(builder.HostEnvironment.BaseAddress));
+builder.Services.AddTransient(sp => sp.GetRequiredService<IHttpClientFactory>().CreateClient("RadzenSchoolTenants.Server"));
+builder.Services.AddScoped<RadzenSchoolTenants.Client.SecurityService>();
+builder.Services.AddScoped<AuthenticationStateProvider, RadzenSchoolTenants.Client.ApplicationAuthenticationStateProvider>();
+builder.Services.AddTransient(sp => new HttpClient{BaseAddress = new Uri(builder.HostEnvironment.BaseAddress)});
+var host = builder.Build();
+await host.RunAsync();

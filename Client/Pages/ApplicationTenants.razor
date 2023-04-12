@@ -1,0 +1,38 @@
+@page "/application-tenants"
+@attribute [Authorize]
+<PageTitle>Application Tenants</PageTitle>
+<RadzenStack>
+    <RadzenRow AlignItems="AlignItems.Center">
+        <RadzenColumn Size="12" SizeMD="6">
+            <RadzenText Text="Tenants" TextStyle="TextStyle.H3" TagName="TagName.H1" style="margin: 0" />
+        </RadzenColumn>
+        <RadzenColumn Size="12" SizeMD="6">
+            <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
+                <RadzenButton Icon="add_circle_outline" Text="Add" Click="@AddClick" Variant="Variant.Flat" />
+            </RadzenStack>
+        </RadzenColumn>
+    </RadzenRow>
+    <RadzenRow>
+        <RadzenColumn SizeMD="12">
+            <RadzenAlert Size="AlertSize.Large" Shade="Shade.Light" AlertStyle="AlertStyle.Danger" Variant="Variant.Flat" Title="Cannot delete tenant" Visible="@errorVisible">@error</RadzenAlert>
+            <RadzenDataGrid @ref="grid0" AllowFiltering="true" AllowPaging="true" ShowPagingSummary="true" PageSizeOptions=@(new int[]{5, 10, 20, 30}) AllowSorting="true" Data="@tenants" TItem="RadzenSchoolTenants.Server.Models.ApplicationTenant" RowSelect="@RowSelect" RowRender="@RowRender">
+                <Columns>
+                    <RadzenDataGridColumn TItem="RadzenSchoolTenants.Server.Models.ApplicationTenant" Property="Name" Title="Name" />
+                    <RadzenDataGridColumn TItem="RadzenSchoolTenants.Server.Models.ApplicationTenant" Property="Hosts" Title="Hosts" />
+                    <RadzenDataGridColumn TItem="RadzenSchoolTenants.Server.Models.ApplicationTenant" Filterable="false" Sortable="false" Width="60px">
+                        <Template Context="tenant">
+                            <RadzenButton Disabled="@(tenant.Id == Security.Tenant?.Id)" Icon="account_balance_wallet" Click="@((args) => SetDefaultTenant(args, tenant))" title="Switch application to this tenant" @onclick:stopPropagation="true">
+                            </RadzenButton>
+                        </Template>
+                    </RadzenDataGridColumn>
+                    <RadzenDataGridColumn TItem="RadzenSchoolTenants.Server.Models.ApplicationTenant" Filterable="false" Sortable="false" TextAlign="TextAlign.Center" Width="70px">
+                        <Template Context="tenant">
+                            <RadzenButton ButtonStyle="ButtonStyle.Danger" Icon="close" Size="ButtonSize.Small"
+                                Variant="Variant.Flat" Shade="Shade.Lighter" Click="@(() => DeleteClick(tenant))" @onclick:stopPropagation="true" />
+                        </Template>
+                    </RadzenDataGridColumn>
+                </Columns>
+            </RadzenDataGrid>
+        </RadzenColumn>
+    </RadzenRow>
+</RadzenStack>

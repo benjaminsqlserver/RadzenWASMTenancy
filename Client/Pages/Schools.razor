@@ -1,0 +1,48 @@
+@page "/schools"
+@attribute [Authorize]
+
+<PageTitle>Schools</PageTitle>
+<RadzenStack>
+<RadzenRow AlignItems="AlignItems.Center">
+    <RadzenColumn Size="12" SizeMD="6">
+        <RadzenText Text="Schools" TextStyle="TextStyle.H3" TagName="TagName.H1" style="margin: 0" />
+    </RadzenColumn>
+    <RadzenColumn Size="12" SizeMD="6">
+        <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
+            <RadzenSplitButton Icon="get_app" Text="Export" Click="@ExportClick" Variant="Variant.Flat" Shade="Shade.Lighter">
+                <RadzenSplitButtonItem Text="Excel" Value="xlsx" />
+                <RadzenSplitButtonItem Text="CSV" Value="csv" />
+            </RadzenSplitButton>
+            <RadzenButton Icon="add_circle_outline" Text="Add" Click="@AddButtonClick" Variant="Variant.Flat" />
+        </RadzenStack>
+    </RadzenColumn>
+</RadzenRow>
+<RadzenTextBox Placeholder="Search ..." style="display: block; width: 100%" @oninput="@Search" />
+<RadzenRow>
+    <RadzenColumn SizeMD=12>
+        <RadzenDataGrid @ref="grid0" ColumnWidth="200px"  AllowFiltering="true" FilterMode="FilterMode.Advanced" AllowPaging="true" AllowSorting="true" ShowPagingSummary="true" PageSizeOptions=@(new int[]{5, 10, 20, 30})
+            Data="@schools" Count=count LoadData=@Grid0LoadData  TItem="RadzenSchoolTenants.Server.Models.ConData.School" RowDoubleClick="@EditRow" >
+            <Columns>
+                <RadzenDataGridColumn TItem="RadzenSchoolTenants.Server.Models.ConData.School" Property="SchoolID" Title="School I D">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="RadzenSchoolTenants.Server.Models.ConData.School" Property="SchoolName" Title="School Name">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="RadzenSchoolTenants.Server.Models.ConData.School" Property="StreetAddress" Title="Street Address">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="RadzenSchoolTenants.Server.Models.ConData.School" Property="Email" Title="Email">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="RadzenSchoolTenants.Server.Models.ConData.School" Property="MobileNumber" Title="Mobile Number">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="RadzenSchoolTenants.Server.Models.ConData.School" Filterable="false" Sortable="false" Width="70px" TextAlign="TextAlign.Center">
+                    <Template Context="school">
+
+                        <RadzenButton ButtonStyle="ButtonStyle.Danger" Icon="delete" Size="ButtonSize.Medium"
+                            Shade="Shade.Lighter" Variant="Variant.Flat"
+                            Click=@(args => GridDeleteButtonClick(args, school)) @onclick:stopPropagation="true" />
+                    </Template>
+                </RadzenDataGridColumn>
+            </Columns>
+        </RadzenDataGrid>
+    </RadzenColumn>
+</RadzenRow>
+</RadzenStack>

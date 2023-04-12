@@ -1,0 +1,117 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = RadzenSchoolTenants.Client
+build_property.RootNamespace = RadzenSchoolTenants.Client
+build_property.ProjectDir = C:\RadzenSchoolTenants\Client\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\RadzenSchoolTenants\Client
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/RadzenSchoolTenants/Client/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/RadzenSchoolTenants/Client/Pages/AddApplicationRole.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkQXBwbGljYXRpb25Sb2xlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/RadzenSchoolTenants/Client/Pages/AddApplicationTenant.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkQXBwbGljYXRpb25UZW5hbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/RadzenSchoolTenants/Client/Pages/AddApplicationUser.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkQXBwbGljYXRpb25Vc2VyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/RadzenSchoolTenants/Client/Pages/AddSchool.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkU2Nob29sLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/RadzenSchoolTenants/Client/Pages/AddStudent.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkU3R1ZGVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/RadzenSchoolTenants/Client/Pages/ApplicationRoles.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwbGljYXRpb25Sb2xlcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/RadzenSchoolTenants/Client/Pages/ApplicationTenants.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwbGljYXRpb25UZW5hbnRzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/RadzenSchoolTenants/Client/Pages/ApplicationUsers.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwbGljYXRpb25Vc2Vycy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/RadzenSchoolTenants/Client/Pages/EditApplicationTenant.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdEFwcGxpY2F0aW9uVGVuYW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/RadzenSchoolTenants/Client/Pages/EditApplicationUser.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdEFwcGxpY2F0aW9uVXNlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/RadzenSchoolTenants/Client/Pages/EditSchool.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdFNjaG9vbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/RadzenSchoolTenants/Client/Pages/EditStudent.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdFN0dWRlbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/RadzenSchoolTenants/Client/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/RadzenSchoolTenants/Client/Pages/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/RadzenSchoolTenants/Client/Pages/Profile.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZmlsZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/RadzenSchoolTenants/Client/Pages/RegisterApplicationUser.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0ZXJBcHBsaWNhdGlvblVzZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/RadzenSchoolTenants/Client/Pages/ResetPassword.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzZXRQYXNzd29yZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/RadzenSchoolTenants/Client/Pages/Schools.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2Nob29scy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/RadzenSchoolTenants/Client/Pages/Students.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/RadzenSchoolTenants/Client/Pages/Unauthorized.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVW5hdXRob3JpemVkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/RadzenSchoolTenants/Client/Shared/LoginLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExvZ2luTGF5b3V0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/RadzenSchoolTenants/Client/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/RadzenSchoolTenants/Client/Shared/RedirectToLogin.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFJlZGlyZWN0VG9Mb2dpbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/RadzenSchoolTenants/Client/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 

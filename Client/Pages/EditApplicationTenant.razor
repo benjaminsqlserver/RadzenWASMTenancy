@@ -1,0 +1,32 @@
+@page "/edit-application-Tenant/{Id}"
+@attribute [Authorize]
+
+<RadzenRow>
+    <RadzenColumn SizeMD="12">
+        <RadzenTemplateForm TItem="RadzenSchoolTenants.Server.Models.ApplicationTenant" Data="@tenant" Visible="@(tenant != null)" Submit="@FormSubmit">
+            <RadzenAlert Title="Cannot create tenant" Shade="Shade.Lighter" Variant="Variant.Flat" Size="AlertSize.Small" AlertStyle="AlertStyle.Danger" Visible="@errorVisible">@error</RadzenAlert>
+            <RadzenRow style="margin-bottom: 1rem">
+                <RadzenColumn SizeMD="3">
+                    <RadzenLabel Component="Name" style="width: 100%" Text="Name" />
+                </RadzenColumn>
+                <RadzenColumn SizeMD="9">
+                    <RadzenTextBox style="display: block; width: 100%" @bind-Value="@(tenant.Name)" Name="Name" />
+                    <RadzenRequiredValidator Component="Name" Text="Name is required" />
+                </RadzenColumn>
+            </RadzenRow>
+            <RadzenRow style="margin-bottom: 1rem">
+                <RadzenColumn SizeMD="3">
+                    <RadzenLabel Component="Hosts" style="width: 100%" Text="Hosts" />
+                </RadzenColumn>
+                <RadzenColumn SizeMD="9">
+                    <RadzenTextBox style="display: block; width: 100%" @bind-Value="@(tenant.Hosts)" Name="Hosts" />
+                    <RadzenRequiredValidator Component="Hosts" Text="Hosts is required" />
+                </RadzenColumn>
+            </RadzenRow>
+            <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
+                    <RadzenButton ButtonType="ButtonType.Submit" Icon="save" Text="Save" Variant="Variant.Flat" />
+                    <RadzenButton ButtonStyle="ButtonStyle.Light" Text="Cancel" Click="@CancelClick" Variant="Variant.Flat" />
+            </RadzenStack>
+        </RadzenTemplateForm>
+    </RadzenColumn>
+</RadzenRow>

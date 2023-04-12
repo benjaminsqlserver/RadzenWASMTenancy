@@ -1,0 +1,73 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\RadzenSchoolTenants\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "C:\\RadzenSchoolTenants\\Client\\obj\\Debug\\net7.0\\build-gz\\pf7yud2A.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "C:\\RadzenSchoolTenants\\Client\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\RadzenSchoolTenants\\Client\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\RadzenSchoolTenants\\Client\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\RadzenSchoolTenants\\Client\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\RadzenSchoolTenants\\Client\\wwwroot\\icon-512.png",
+      "PackagePath": "staticwebassets\\icon-512.png"
+    },
+    {
+      "Id": "C:\\RadzenSchoolTenants\\Client\\wwwroot\\images\\login.jpg",
+      "PackagePath": "staticwebassets\\images\\login.jpg"
+    },
+    {
+      "Id": "C:\\RadzenSchoolTenants\\Client\\wwwroot\\images\\logo-login.png",
+      "PackagePath": "staticwebassets\\images\\logo-login.png"
+    },
+    {
+      "Id": "C:\\RadzenSchoolTenants\\Client\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
+      "Id": "C:\\RadzenSchoolTenants\\Client\\wwwroot\\manifest.json",
+      "PackagePath": "staticwebassets\\manifest.json"
+    },
+    {
+      "Id": "C:\\RadzenSchoolTenants\\Client\\wwwroot\\service-worker.js",
+      "PackagePath": "staticwebassets\\service-worker.js"
+    },
+    {
+      "Id": "C:\\RadzenSchoolTenants\\Client\\wwwroot\\service-worker.published.js",
+      "PackagePath": "staticwebassets\\service-worker.published.js"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.RadzenSchoolTenants.Client.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.RadzenSchoolTenants.Client.props",
+      "PackagePath": "build\\RadzenSchoolTenants.Client.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.RadzenSchoolTenants.Client.props",
+      "PackagePath": "buildMultiTargeting\\RadzenSchoolTenants.Client.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.RadzenSchoolTenants.Client.props",
+      "PackagePath": "buildTransitive\\RadzenSchoolTenants.Client.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
